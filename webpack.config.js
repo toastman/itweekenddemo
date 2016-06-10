@@ -4,7 +4,7 @@ var path = require('path');
 // Config without module dependencies
 module.exports = {
     entry: {
-        "app": "./src/scroller.js"
+        "scroller": "./src/scroller.js"
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
