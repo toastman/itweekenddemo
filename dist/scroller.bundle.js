@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "154eb9c03b18b702c8db"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9dda369e255e657beb1a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -587,19 +587,23 @@
 
 	__webpack_require__(1);
 
-	var _docHeight = document.height !== undefined ? document.height : document.body.offsetHeight;
-	var template = document.createElement("DIV");
+	var setUpScroller = function setUpScroller() {
+	    var _docHeight = document.height !== undefined ? document.height : document.body.offsetHeight;
+	    var template = document.createElement("DIV");
 
-	template.classList.add('itw-progress-bar');
-	document.body.appendChild(template);
+	    template.classList.add('itw-progress-bar');
+	    document.body.appendChild(template);
 
-	var setProgressBarPosition = function setProgressBarPosition() {
-	    var proportion = Math.round(window.pageYOffset / (_docHeight - window.innerHeight) * 100);
-	    template.style.width = proportion + '%';
+	    var setProgressBarPosition = function setProgressBarPosition() {
+	        var proportion = Math.round(window.pageYOffset / (_docHeight - window.innerHeight) * 100);
+	        template.style.width = proportion + '%';
+	    };
+
+	    setProgressBarPosition();
+	    document.addEventListener('scroll', setProgressBarPosition);
 	};
 
-	setProgressBarPosition();
-	document.addEventListener('scroll', setProgressBarPosition);
+	document.addEventListener("DOMContentLoaded", setUpScroller);
 
 /***/ },
 /* 1 */
