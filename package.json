@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node_modules/.bin/jasmine JASMINE_CONFIG_PATH=jasmine.json",
     "dev": "node_modules/.bin/webpack-dev-server",
-    "build": "node_modules/.bin/webpack"
+    "build": "node_modules/.bin/webpack",
+    "gh-pages": "git checkout gh-pages && git checkout master dist && git checkout master index.html && git add . && git commit -m 'Deploy to gh-pages' && git push origin gh-pages &&  git checkout master"
   },
   "repository": {
     "type": "git",
