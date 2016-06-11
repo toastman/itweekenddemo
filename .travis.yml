@@ -3,6 +3,4 @@ install:
 language: node_js
 node_js:
   - "4.2.4"
-script:
-  - npm test
-  - npm run build
+script: npm test && npm run build
