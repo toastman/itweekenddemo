@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/toastman/itweekenddemo.svg?branch=master)](https://travis-ci.org/toastman/itweekenddemo)
+
 # IT Weekend Demo
 Demo project for IT Weekend conference
 
