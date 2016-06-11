@@ -17,7 +17,7 @@ describe('Scroller', function() {
         expect(true).toBeTruthy();
     });
 
-    it('should fail', function() {
+    xit('should fail', function() {
         expect(false).toBeTruthy();
     });
 });
