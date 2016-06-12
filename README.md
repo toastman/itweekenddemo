@@ -1,7 +1,10 @@
 [![Build Status](https://travis-ci.org/toastman/itweekenddemo.svg?branch=master)](https://travis-ci.org/toastman/itweekenddemo)
 
 # IT Weekend Demo
-Demo project for IT Weekend conference
+Demo project for IT Weekend conference. You can find [itweekenddemo](https://www.npmjs.com/package/itweekenddemo) package on *NPM*
+
+## How to install 
+`npm i itweekenddemo`
 
 ## Project stack
  * ES6
