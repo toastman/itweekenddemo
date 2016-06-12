@@ -3,6 +3,8 @@
 # IT Weekend Demo
 Demo project for IT Weekend conference. You can find [itweekenddemo](https://www.npmjs.com/package/itweekenddemo) package on *NPM*
 
+# [Live demo](http://toastman.github.io/itweekenddemo)
+
 ## How to install 
 `npm i itweekenddemo`
 
